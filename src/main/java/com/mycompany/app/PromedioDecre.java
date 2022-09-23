@@ -8,7 +8,7 @@ package com.mycompany.app;
 import java.io.*;
 import java.lang.Math;
 import java.util.Scanner;
-public class Promedio
+public class PromedioDecre
 {
     public static void main (String[] args)
     {
@@ -22,12 +22,12 @@ public class Promedio
       }while (n1 <= 0);
 
       sum=0;
-      cont=1;
+      cont=n1;
 
       do{
 	      sum = sum + cont;
-	      cont = cont + 1;
-      }while (cont <= n1);
+	      cont = --cont;
+      }while (cont != 0);
 
       div = sum / n1;
 

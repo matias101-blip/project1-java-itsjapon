@@ -7,7 +7,7 @@ package com.mycompany.app;
 import java.io.*;
 import java.lang.Math;
 import java.util.Scanner;
-public class MultiBucle
+public class MultiParesDecre
 {
     public static void main (String[] args)
     {
@@ -20,13 +20,13 @@ public class MultiBucle
        }while (n1 <= 0);
 
        sum = 0;
-       cont = 0;
+       cont = 18;
 
        do{
 	       mult = cont*n1;
 	       sum = mult + sum;
-	       cont = cont + 2;
-       }while (cont <= 18);
+	       cont = cont - 2;
+       }while (cont != 0);
 
        sum = sum + n1;
 

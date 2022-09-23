@@ -20,15 +20,14 @@ public class MultImparBucle
 	}while (n1 <= 0);
 
 	sum = 0;
-	cont = 3;
+	cont = 1;
 
 	do{
 		mult = cont * n1;
 		sum = mult + sum;
 		cont = cont + 2;
-	}while (cont <= 39);
-
-	sum = sum + n1;
+		System.out.println(cont);
+	}while (cont != 41);
 
 	System.out.println("La suma de los 20 primeros numeros impares de: " + n1 + " es: " + sum);
     }

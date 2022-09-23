@@ -8,7 +8,7 @@ import java.io.*;
 import java.lang.Math;
 import java.util.Scanner;
 
-public class NumerosImpares
+public class NumerosImparesDecre
 {
     public static void main (String[] args)
     {
@@ -21,13 +21,13 @@ public class NumerosImpares
 	}while (n1 <= 10);
 
 	sum=0;
-	cont = 1;
+	cont = n1;
 
 	do{
 		sum = ++sum;
 		System.out.println(cont);
-		cont = cont + 2;
-	}while (cont <= n1);
+		cont = cont - 3;
+	}while (cont != 1);
 
 	System.out.println("En el numero: " + n1 + " hay " + sum + " impares");
     }
